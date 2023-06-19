@@ -157,17 +157,106 @@ nav a:hover {
 .design {
   height: 50vh;
   margin-top: 60px;
-  background: #eaeaea;
+  color: #eaeaea;
   display: flex;
   flex-direction: column;
-  color: black;
   align-items: center;
   justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+.design h1 {
+  font-size: 27px;
+  letter-spacing: 12px;
+}
+.design p {
+  max-width: 500px;
+}
+.design button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 60px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.design button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
 }
 
 #interior {
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), black), url(/images/interior.jpg);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url(/images/interior.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#exterior {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url(/images/exterior-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cars-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 50px auto;
+  gap: 50px;
+}
+#cars-section h1 {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+#cars-section h1 span {
+  color: #e50000;
+  text-shadow: 2px 2px 10px rgba(229, 0, 0, 0.6117647059);
+}
+#cars-section .cars-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  #cars-section .cars-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#cars-section .cars-container .card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#cars-section .cars-container .card img {
+  width: 100%;
+  mix-blend-mode: darken;
+}
+#cars-section .cars-container .card h3 {
+  text-align: center;
+}
+#cars-section button {
+  padding: 10px 70px;
+  max-width: 200px;
+  text-transform: uppercase;
+  margin: 0px auto;
+  background-color: #08d9d6;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: background-color 0.5s, border 0.4s;
+}
+#cars-section button:hover {
+  background-color: #009694;
+  border: 1px solid;
+  transition: all 0.5s;
 }/*# sourceMappingURL=style.css.map */
