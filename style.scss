@@ -223,7 +223,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
 }
-// ARABALR ALANI
+
 
 #cars-section {
   display: flex;
@@ -281,5 +281,23 @@ nav {
       border: 1px solid;
       transition: all 0.5s;
     }
+  }
+}
+
+footer{
+  display: flex;
+  background: black;
+  color: white;
+  padding: 200px 50px 50px 50px;
+  align-items: center;
+  gap: 50px;
+
+  img{
+    max-width: 200px;
+    max-height: 100px;
+  }
+  p{
+    text-align: justify;
+
   }
 }
